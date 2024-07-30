@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Im Am ?">
+    <meta name="version" content="0.9.0">
+    <meta name="date" content="2024-07-30">
+    <meta name="description" content="Document décrivant les normes de développement pour le projet.">
+    <title>AIgo</title>
+    <style>
+        * { margin: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 26px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 { margin: 26px 0; }
+        h2 {
+            color: #333;
+            margin: 6px 0;
+        }
+        pre {
+            margin: 26px 0;
+            background: #f5f5f5;
+            border-left: 3px solid #ccc;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code { display: block; }
+        ul { margin: 26px 0; }
+        .bloc { color: #000000; }
+        .keyword { color: #112ebf; }
+        .struct { color: #ff8e03; }
+        .type { color: #d420fc; }
+        .comment { color: #3fa456; }
+        .algo { color: #9b4f20; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Documentation de AIgo (Ecriture d'Algorithme)</h1>
+        <span><strong>Auteur :</strong> I Am ? <strong>Version :</strong> 0.9.0 <strong>Date :</strong> 2024-07-30</span>
+        <br>
+        <h3>STRUCTURE</h3>
+        <pre><code>
+            <strong class="bloc">DEBUT</strong>
+            <strong class="struct">DESCRIPTION</strong> Structure d'un algorithme
+            <span class="comment">//Déclaration des variables</span>
+            <strong class="struct">VARIABLES</strong>:<strong class="type">ENTIER</strong> x, y<span class="comment"> //Plusieurs par ligne</span>
+            <strong class="struct">VARIABLES</strong>:<strong class="type">CHAINE</strong> mot<span class="comment"> //Un type par ligne</span>
+            <span class="comment">//Ecriture de l'algorithme</span>
+            <strong class="algo">ALGORITHME</strong> Nom(parametre:<strong class="type">REEL</strong>)
+                mot := "assignation"
+            <strong class="algo">FINALGORITHME</strong>
+            <strong class="struct">IMPORTS</strong> ATTENDRE, MIN, MAX<span class="comment"> //Nécessite des fonctions connues</span>
+            <span class="comment">//Définition des fonctions</span>
+            <strong class="struct">FONCTION:<strong class="type">ENTIER</strong></strong> Fonction(parametre:<strong class="type">ENTIER</strong>)<span class="comment"> //Une fonction par ligne</span>
+            <strong class="struct">FINFONCTION</strong>
+            <strong class="bloc">FIN</strong>
+        </code></pre>
+        <h3>VARIABLES</h3>
+        <ul>
+            <li><strong class="type">TYPE</strong></li>
+            <li><strong class="type">ENTIER</strong></li>
+            <li><strong class="type">REEL</strong></li>
+            <li><strong class="type">CARACTERE</strong></li>
+            <li><strong class="type">CHAINE</strong></li>
+            <li><strong class="type">BOOLEEN</strong></li>
+            <li><strong class="type">TABLEAU</strong>[<strong class="type">TYPE</strong>] </li>
+        </ul>
+        <h3>OPERATEURS</h3>
+        <ul>
+            <li><strong>Arithmétiques : +, -, *</li>
+            <li><strong>Comparaison : =, <, > </li>
+            <li><strong>Logiques : <strong class="keyword">ET</strong>, <strong class="keyword">OU</strong>, <strong class="keyword">NON</strong></li>
+        </ul>
+        <h3>CONDITIONS</h3>
+        <ul>
+            <li><strong class="keyword">SI</strong> condition <strong class="keyword">ALORS</strong></li>
+            <li><strong class="keyword">SINON SI</strong> condition <strong class="keyword">ALORS</strong></li>
+            <li><strong class="keyword">SINON</strong></li>
+            <li><strong class="keyword">CAS OU</strong> variable <strong class="keyword">VAUT</strong></li>
+        </ul>
+        <h3>BOUCLES</h3>
+        <ul>
+            <li><strong class="keyword">REPETER</strong></li>
+            <li><strong class="keyword">TANTQUE</strong> condition <strong class="keyword">FAIRE</strong></li>
+            <li><strong class="keyword">POUR</strong> indice <strong class="keyword">ALLANT DE variable A variable FAIRE</strong></li>
+        </ul>
+        <h3>IMPORTS</h3>
+        <ul>
+            <li><strong class="keyword">ABSOLU</strong>:<strong class="type">REEL</strong>(nombre:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">ABSOLU</strong>:<strong class="type">REEL</strong>(nombre:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">ALEATOIRE</strong>:<strong class="type">ENTIER</strong>()</li>
+            <li><strong class="keyword">ALEATOIRE</strong>:<strong class="type">REEL</strong>()</li>
+            <li><strong class="keyword">ATTENDRE</strong>(secondes:<strong class="type">ENTIER</strong>)</li>
+            <li><strong class="keyword">CONCATENER</strong>:<strong class="type">CHAINE</strong>("...", "...", chaine:<strong class="type">CHAINE</strong>, "...")</li>
+            <li><strong class="keyword">CONTROLER</strong>:<strong class="type">BOOLEEN</strong>(quelqueChose:<strong class="type">TYPE</strong>)</li>
+            <li><strong class="keyword">DIVISER</strong>:<strong class="type">ENTIER</strong>(dividande:<strong class="type">REEL</strong>, diviseur:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">DIVISER</strong>:<strong class="type">REEL</strong>(dividande:<strong class="type">REEL</strong>, diviseur:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">INTERVERTIR</strong>(variable1:<strong class="type">TYPE</strong>,variable2:<strong class="type">TYPE</strong>)</li>
+            <li><strong class="keyword">MAJUSCULE</strong>:<strong class="type">CHAINE</strong>("...")</li>
+            <li><strong class="keyword">MAJUSCULE</strong>:<strong class="type">CHAINE</strong>(chaine:<strong class="type">CHAINE</strong>)</li>
+            <li><strong class="keyword">MAX</strong>:<strong class="type">ENTIER</strong>(tableau:<strong class="type">TABLEAU</strong>[<strong class="type">ENTIER</strong>])</li>
+            <li><strong class="keyword">MAX</strong>:<strong class="type">REEL</strong>(tableau:<strong class="type">TABLEAU</strong>[<strong class="type">REEL</strong>])</li>
+            <li><strong class="keyword">MIN</strong>:<strong class="type">ENTIER</strong>(tableau:<strong class="type">TABLEAU</strong>[<strong class="type">ENTIER</strong>])</li>
+            <li><strong class="keyword">MIN</strong>:<strong class="type">REEL</strong>(tableau:<strong class="type">TABLEAU</strong>[<strong class="type">REEL</strong>])</li>
+            <li><strong class="keyword">MINUSCULE</strong>:<strong class="type">CHAINE</strong>("...")</li>
+            <li><strong class="keyword">MINUSCULE</strong>:<strong class="type">CHAINE</strong>(chaine:<strong class="type">CHAINE</strong>)</li>
+            <li><strong class="keyword">MODULO</strong>:<strong class="type">ENTIER</strong>(dividande:<strong class="type">REEL</strong>, diviseur:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">PLUSGRAND</strong>:<strong class="type">ENTIER</strong>(nombre1:<strong class="type">ENTIER</strong>, nombre2:<strong class="type">ENTIER</strong>)</li>
+            <li><strong class="keyword">PLUSGRAND</strong>:<strong class="type">REEL</strong>(nombre1:<strong class="type">REEL</strong>, nombre2:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">PLUSPETIT</strong>:<strong class="type">ENTIER</strong>(nombre1:<strong class="type">ENTIER</strong>, nombre2:<strong class="type">ENTIER</strong>)</li>
+            <li><strong class="keyword">PLUSPETIT</strong>:<strong class="type">REEL</strong>(nombre1:<strong class="type">REEL</strong>, nombre2:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">RACINE</strong>:<strong class="type">REEL</strong>(nombre:<strong class="type">REEL</strong>)</li>
+            <li><strong class="keyword">RECHERCHER</strong>:<strong class="type">TYPE</strong>(quelqueChose:<strong class="type">TYPE</strong>, dansQuelqueChose:<strong class="type">TYPE</strong>)</li>
+            <li><strong class="keyword">SOUSENSEMBLE</strong>:<strong class="type">TABLEAU</strong>[<strong class="type">TYPE</strong>](tableau:<strong class="type">TABLEAU</strong>[<strong class="type">TYPE</strong>])</li>
+            <li><strong class="keyword">TAILLE</strong>:<strong class="type">ENTIER</strong>(quelqueChose:<strong class="type">TYPE</strong>)</li>
+        </ul>
+        <h3>COMMUNICATIONS</h3>
+        <ul>
+            <li><strong class="keyword">MECANIQUE</strong>:><strong class="type">TYPE</strong>("...")</li>
+            <li><strong class="keyword">MECANIQUE</strong>:<<strong class="type">TYPE</strong>("...")</li>
+            <li><strong class="keyword">CONSOLE</strong>:><strong class="type">TYPE</strong>("...")</li>
+            <li><strong class="keyword">CONSOLE</strong>:<<strong class="type">TYPE</strong>("...")</li>
+            <li><strong class="keyword">GRAPHIQUE</strong>:><strong class="type">TYPE</strong>("...")</li>
+            <li><strong class="keyword">GRAPHIQUE</strong>:<<strong class="type">TYPE</strong>("...")</li>
+        </ul>
+        <h3>EXEMPLE : QUICKSORT</h3>
+        <pre><code>
+            <strong class="bloc">DEBUT</strong>
+            <strong class="struct">DESCRIPTION</strong> A chaque appel de Quicksort, on positione definitivement un point de pivot choisit comme dernier element du tableau a trier.
+            <strong class="struct">VARIABLES</strong>:<strong class="type">ENTIER</strong> pivot, positionFinaleDuPivot
+            <strong class="algo">ALGORITHME</strong> Quicksort(tableau:TABLEAU[ENTIER], indexDebut:ENTIER, indexFin:ENTIER)
+                positionFinaleDuPivot := indexDebut
+                pivot := tableau[indexFin]
+                <strong class="keyword">SI</strong> indexFin - indexDebut < 1 <strong class="keyword">ALORS</strong><span class="comment"> //Si le tableau contient moins de 2 éléments</span>
+                    <strong class="keyword">QUITTER</strong>
+                <strong class="keyword">SINON</strong>
+                    <strong class="keyword">POUR</strong> indice <strong class="keyword">ALLANT DE</strong> indexDebut <strong class="keyword">A</strong> indexFin - 1 <strong class="keyword">FAIRE</strong><span class="comment"> //Car on ne prend pas le pivot</span>
+                        <strong class="keyword">SI</strong> tableau[indice] < pivot <strong class="keyword">ALORS</strong>
+                            INTERVERTIR(tableau[positionFinaleDuPivot], tableau[indice])
+                            positionFinaleDuPivot := positionFinaleDuPivot + 1
+                        <strong class="keyword">FINSI</strong>
+                        indice := indice + 1
+                    <strong class="keyword">FINPOUR</strong>
+                    INTERVERTIR(tableau[positionFinaleDuPivot],  tableau[indexFin])<span class="comment"> //On place pivot à sa position</span>
+                    Quicksort(tableau, indexDebut, positionFinaleDuPivot - 1)<span class="comment"> //On retire le pivot de la selection</span>
+                    Quicksort(tableau, positionFinaleDuPivot + 1, indexFin)<span class="comment"> //On retire le pivot de la selection</span>
+                <strong class="keyword">FINSI</strong>
+            <strong class="algo">FINALGORITHME</strong>
+            <strong class="struct">IMPORTS</strong> INTERVERTIR
+            <strong class="bloc">FIN</strong>
+        </code></pre>
+    </div>
+</body>
+</html>
