@@ -1,0 +1,23 @@
+DEBUT
+DESCRIPTION A chaque appel de Quicksort, on positione definitivement un point de pivot choisit comme dernier element du tableau a trier.
+VARIABLES:ENTIER pivot, positionFinaleDuPivot
+ALGORITHME Quicksort(tableau:TABLEAU[ENTIER], indexDebut:ENTIER, indexFin:ENTIER)
+    positionFinaleDuPivot := indexDebut
+    pivot := tableau[indexFin]
+    SI indexFin - indexDebut < 1 ALORS //Si le tableau contient moins de 2 éléments
+        QUITTER
+    SINON
+        POUR indice ALLANT DE indexDebut A indexFin - 1 FAIRE //Car on ne prend pas le pivot
+            SI tableau[indice] < pivot ALORS
+                INTERVERTIR(tableau[positionFinaleDuPivot], tableau[indice])
+                positionFinaleDuPivot := positionFinaleDuPivot + 1
+            FINSI
+            indice := indice + 1
+        FINPOUR
+        INTERVERTIR(tableau[positionFinaleDuPivot],  tableau[indexFin]) //On place pivot à sa position
+        Quicksort(tableau, indexDebut, positionFinaleDuPivot - 1) //On retire le pivot de la selection
+        Quicksort(tableau, positionFinaleDuPivot + 1, indexFin) //On retire le pivot de la selection
+    FINSI
+FINALGORITHME
+IMPORTS INTERVERTIR
+FIN
