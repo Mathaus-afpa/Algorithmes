@@ -1,0 +1,6 @@
+public enum OPERATEURS {
+    ADDITION,
+    SOUSTRACTION,
+    MULTIPLICATION,
+    DIVISION
+}
